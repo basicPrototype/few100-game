@@ -1,9 +1,10 @@
 
 import './styles.css';
+import { getRandomInt } from './math';
 
 // find the valuable things
 
-const secretNumber = 6;  // add a randomizer
+const secretNumber = getRandomInt(1, 9);  // add a randomizer
 
 const squares = document.querySelectorAll('.square') as NodeListOf<HTMLDivElement>;
 
